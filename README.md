@@ -42,6 +42,7 @@ December 16, 2016:
 - Due to a bug in the way that programmatically-created Word lists are created, the Markdown-to-Word will only correctly convert the first list (or sometimes the first two lists) in a document. (Any number of Markdown lists will convert correctly to Word.)
 - If you convert the same document repeatedly between Word and Markdown back and forth, all of the rows in tables will take on the formatting of the header row, which usually includes bold text.
 - The add-in uses some Office APIs that are not yet supported in Word Online (as of 2017/2/15). You should test it in desktop Word (which opens automatically when you press F5.
+- If you get this error: "The project references NuGet packages(s) that are missing on this computer" when you first build the solution, open the *.csproj* file in the Word-Add-in-MarkdownConversionWeb folder and remove the `<Target...></Target>` tag. 
 
 ## Questions and comments
 
